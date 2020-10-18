@@ -11,13 +11,13 @@
 <body>
   <main>
     <h1>Hello World</h1>
-    <p>Loading message from the API:<b id="name">...</b></p>
+    <p>Loading message from the API: <b id="name">...</b></p>
   </main>
 </body>
 
 <script> 
   (async function(){
-    let {text} = await( await fetch('/API/HttpTrigger1')).json();
+    let { text } = await( await fetch(`/API/HttpTrigger1`)).json();
     document.querySelector('#name').textContent = text;
   }())
 </script>
