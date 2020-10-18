@@ -6,7 +6,7 @@
     "debug.internalConsoleOptions": "neverOpen",
     "azureFunctions.preDeployTask": "npm prune",
     "liveServer.settings.proxy": {
-        "enable": false,
+        "enable": true,
         "baseUri": "/API",
         "proxyUri": "http://127.0.0.1:7071/API"
     }
