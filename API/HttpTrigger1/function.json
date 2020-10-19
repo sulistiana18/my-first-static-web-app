@@ -1,19 +1,18 @@
 {
-  "bindings": [
-    {
-      "authLevel": "anonymous",
-      "type": "httpTrigger",
-      "direction": "in",
-      "name": "req",
-      "methods": [
-        "get"
-      ],
-      "route": "message"
-    },
-    {
-      "type": "http",
-      "direction": "out",
-      "name": "res"
-    }
-  ]
-}
+  "Version": "2012-10-17",
+  "Statement": [
+      {
+          "Sid": "VisualEditor0",
+          "Effect": "Allow",
+          "Action": [
+              "cosmosDB:PutItem",
+              "cosmosDB:DeleteItem",
+              "cosmosDB:GetItem",
+              "cosmosDB:Scan",
+              "cosmosDB:Query",
+              "cosmosDB:UpdateItem"
+          ],
+          "Resource": "https://datainputan.documents.azure.com:443/"
+      }
+      ]
+  }
